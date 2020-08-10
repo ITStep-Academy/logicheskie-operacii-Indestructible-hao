@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <iostream>
+#include <cstdbool>
+using namespace std;
+
+int main()
+{
+    system("chcp 1251 > null");
+    int a, b;
+    scanf_s("%d", &a, &b);
+    printf("%d", (a % 5 == 0 && b % 5 != 0) || (a % 5 != 0 && b % 5 == 0));
+   
+    return 0;
+}

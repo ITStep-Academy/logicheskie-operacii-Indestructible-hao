@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <iostream>
+#include <cstdbool>
+using namespace std;
+
+int main()
+{
+    system("chcp 1251 > null");
+    int a;
+    scanf_s("%d", &a);
+    printf("%d", (a >= 1000 != 4999 && a <= 9999 != 4999));
+   
+    return 0;
+}

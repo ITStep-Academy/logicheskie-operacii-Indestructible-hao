@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <iostream>
+#include <cstdbool>
+using namespace std;
+
+int main()
+{
+    system("chcp 1251 > null");
+    int x, y, z;
+    scanf_s("%d", &x, &y, &z);
+    printf("%d", (x > 80 || y > 80 || z > 80));
+    
+    return 0;
+}
