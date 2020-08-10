@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <iostream>
+#include <cstdbool>
+using namespace std;
+
+int main()
+{
+    system("chcp 1251 > null");
+    float a, b;
+    scanf_s("%f %f", &a, &b);
+    printf("%.2f > %.2f %d\n", a, b, (a > b));
+    printf("%.2f > %.2f %d\n\n", b, a, (b > a));
+   
+    return 0;
+}
