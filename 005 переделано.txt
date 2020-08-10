@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <iostream>
+#include <cstdbool>
+using namespace std;
+
+int main()
+{
+    system("chcp 1251 > null");
+    int a, b, c, d;
+    scanf_s("%d %d %d %d", &a, &b, &c, &d);
+    printf("%d/%d > %d/%d   %d\n", a, b, c, d, (a / b > c / d));
+    printf("%d/%d > %d/%d   %d\n", c, d, a, b, (c / d > a / b));
+   
+    return 0;
+}
