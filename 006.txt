@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <iostream>
+#include <cstdbool>
+using namespace std;
+
+int main()
+{
+    system("chcp 1251 > null");
+    float black = 1.1, white, x, y;
+    printf("\tВведите кординату X\n\t");
+    scanf_s("%f", &x);
+    printf("\tВведите кординату Y\n\t");
+    scanf_s("%f", &y);
+    white = (y / 10) + x;
+    printf("This field is white: %d\n\n", (white != black));
+    return 0;
+}
